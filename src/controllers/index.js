@@ -6,7 +6,7 @@ const {
 // GET API INFO ------------------------------------------------------
 const getApiInfo = async () => {
     try {
-        let info = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`)
+        let info = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c3c7a9bf1800468294e186612258b358&addRecipeInformation=true&number=100`)
 
         let recipes = info.data.results.map(e => {
             return {
